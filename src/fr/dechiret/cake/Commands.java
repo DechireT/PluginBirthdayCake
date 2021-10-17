@@ -17,8 +17,8 @@ public class Commands implements CommandExecutor {
 
 	static Main main;
 	
-	public Commands(Main varr){
-		Commands.main = varr;
+	public Commands(Main main){
+		Commands.main = main;
 	}
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String msg, String[] args) {	
@@ -81,7 +81,7 @@ public class Commands implements CommandExecutor {
 				}
 				
 		        }
-				}
+		}
 				
 		return false;
 	}

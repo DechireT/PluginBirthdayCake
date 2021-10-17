@@ -32,7 +32,7 @@ public class Commands implements CommandExecutor {
 		if(cmd.getName().equalsIgnoreCase("anniversaire") || cmd.getName().equalsIgnoreCase("anniv") || cmd.getName().equalsIgnoreCase("anniversary") || cmd.getName().equalsIgnoreCase("birthday")){	
 			
 				if(args.length == 0) {
-				player.sendMessage(main.getConfig().getString("birthdaycake.message.usage").replace("&", "ง"));
+				player.sendMessage(main.getConfig().getString("birthdaycake.message.usage").replace("&", "ยง"));
 			}
 			if(args.length >= 1) {
 				
@@ -46,17 +46,17 @@ public class Commands implements CommandExecutor {
 				}
 				ItemStack gateauit = new ItemStack(Material.CAKE, 1);
 				ItemMeta gateauitM = gateauit.getItemMeta();
-				gateauitM.setDisplayName(main.getConfig().getString("birthdaycake.message.meta.name").replace("&", "ง").replace("{player}", player.getName()) + joueur.toString());		// joyeux anniversaire					
-				gateauitM.setLore(Arrays.asList(main.getConfig().getString("birthdaycake.message.meta.lore1").replace("&", "ง").replace("{player}", player.getName()),
-						main.getConfig().getString("birthdaycake.message.meta.lore2").replace("&", "ง").replace("{player}", player.getName()) +  joueur.toString(),
-						main.getConfig().getString("birthdaycake.message.meta.lore3").replace("&", "ง").replace("{player}", player.getName()) + joueur.toString()));
+				gateauitM.setDisplayName(main.getConfig().getString("birthdaycake.message.meta.name").replace("&", "ยง").replace("{player}", player.getName()) + joueur.toString());		// joyeux anniversaire					
+				gateauitM.setLore(Arrays.asList(main.getConfig().getString("birthdaycake.message.meta.lore1").replace("&", "ยง").replace("{player}", player.getName()),
+						main.getConfig().getString("birthdaycake.message.meta.lore2").replace("&", "ยง").replace("{player}", player.getName()) +  joueur.toString(),
+						main.getConfig().getString("birthdaycake.message.meta.lore3").replace("&", "ยง").replace("{player}", player.getName()) + joueur.toString()));
 				gateauitM.addEnchant(Enchantment.MENDING, 200, true);
 				gateauitM.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 				gateauit.setItemMeta(gateauitM);
 				player.getInventory().addItem(gateauit);   
 				
-				//player.sendMessage(main.getConfig().getString("birthdaycake.message.meta.name").replace("&", "ง") + joueur.toString());
-				player.sendMessage(main.getConfig().getString("birthdaycake.message.player-executing-command-message").replace("&", "ง").replace("{player}", player.getName()));
+				//player.sendMessage(main.getConfig().getString("birthdaycake.message.meta.name").replace("&", "ยง") + joueur.toString());
+				player.sendMessage(main.getConfig().getString("birthdaycake.message.player-executing-command-message").replace("&", "ยง").replace("{player}", player.getName()));
 				
 				player.updateInventory();
 		        
@@ -86,16 +86,4 @@ public class Commands implements CommandExecutor {
 		return false;
 	}
 		
-}	
-/*			
-if(cooldowns.containsKey(player.getName())) {
-
-if(cooldowns.get(player.getName()) > System.currentTimeMillis()) {
-	
-	long timeleft = (cooldowns.get(player.getName()) - System.currentTimeMillis()) + (main.getConfig().getInt("birthdaycake.message.cooldowns-time") * 1000);
-
-	player.sendMessage("งcTu dois attendre งe" + timeleft + "งc seconde(s) avant de refaire /anniversaire !");
-	return false;
 }
-}
-cooldowns.put(p, System.currentTimeMillis() + (main.getConfig().getInt("birthdaycake.message.cooldowns-time") * 1000));  //, System.currentTimeMillis() / 1000);*/

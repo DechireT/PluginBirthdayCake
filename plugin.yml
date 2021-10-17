@@ -1,0 +1,12 @@
+name: BirthdayCake
+version: 1.2
+author: DechireT
+main: fr.dechiret.cake.Main
+
+commands:
+  anniversaire:
+    permission: birthdaycake.use
+    aliases: [anniv]
+  birthday:
+    permission: birthdaycake.use
+    aliases: [anniversary]

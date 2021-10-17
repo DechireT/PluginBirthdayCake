@@ -1,0 +1,56 @@
+#.....//////...////////...////....//..//////...//...////////
+#.....//.......//....//...//.//...//..//............//.....
+#.....//.......//....//...//..//..//..//////...//...//..////
+#.....//.......//....//...//...//.//..//.......//...//....//
+#.....//////...////////...//....////..//.......//...////////
+#
+# FR:   Ce plugin a été créer par Dechire T
+#
+#           Sur Youtube : Dechire T
+#
+# C'est un plugin d'anniversaire dans le fun
+# Ce plugin n'a pas pour but d'espionné les utilisateurs
+# Et le developeur n'est pas responsable d'une mauvaise utilisation !
+# Se plugin a été traduit en Englais par google traduction, il est donc disponible
+# en Anglais et en Francais
+# Ce qui est commenté en bas est la config + la discription en Anglais
+# Mon serveur Discord: https://discord.gg/8HBtDZX
+# Mon Insta: https://www.instagram.com/dechire_t/?hl=fr
+#
+# EN:     This plugin was created by Dechire T
+#
+#          On Youtube: Dechire T
+#
+# It's a fun birthday plugin
+# This plugin is not intended to spy on users
+# And the developer is not responsible for misuse!
+# This plugin has been translated into English by google translate, so it is available
+# in English and French
+# What is commented below is the config + discription in English
+# My Discord server: https://discord.gg/8HBtDZX
+# My Insta: https://www.instagram.com/dechire_t/?hl=fr
+
+birthdaycake:
+  message:
+    no-sender-player: "Only players can make /birthday !"              # if the person is not a player
+    usage: "&c/birthday {Player's or IRL Name}"                          # Usage
+    player-executing-command-message:  "&aYou received the Cake"           # Player executing the command
+
+    meta:
+      name: "&4H&ca&6p&ep&2y &aB&bi&3r&1t&9h&dd&5a&4y &e{player}"
+      lore1: " "
+      lore2: "&4H&ca&6p&ep&2y &aB&bi&3r&1t&9h&dd&5a&4y &e{player}"
+      lore3: "&4H&ca&6p&ep&2y &aB&bi&3r&1t&9h&dd&5a&4y &e{player}"
+
+#birthdaycake:
+#  message:
+#    no-sender-player: "Seul les joueurs peuvent faire /anniversaire !"      # si la personne qui exécute la commande n'est pas un joueur
+#    usage: "&c/anniversaire {Joueur ou Nom IRL}"                            # Utilisation
+#    player-executing-command-message: "&aTu recois le Gâteau"               # Joueur exécutant la commande
+#
+#    meta:
+#      name: "&4J&co&6y&ee&2u&ax &bA&3n&1n&9i&dv&5e&4r&cs&6a&ei&2r&ae &e{player}"    # Nom
+#      lore1: " "                                                                    # Description 1
+#      lore2: "&4J&co&6y&ee&2u&ax &bA&3n&1n&9i&dv&5e&4r&cs&6a&ei&2r&ae &e{player}"   # Description 2
+#      lore3: "&4J&co&6y&ee&2u&ax &bA&3n&1n&9i&dv&5e&4r&cs&6a&ei&2r&ae &e{player}"   # Description 3
+
